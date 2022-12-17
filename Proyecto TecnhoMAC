@@ -1,0 +1,52 @@
+create database TecnhoMAC
+go
+use TecnhoMAC
+
+go
+create table clientes
+(
+ID  int identity,
+Nombre nvarchar(50),
+Direccion nvarchar (50),
+)
+go
+
+create table Productos
+(Codigo int identity,
+Nombre  nvarchar(100),
+Precio nvarchar(100),
+Cantidad nvarchar(100),
+Categoria nvarchar(100),
+)
+go
+
+create table Ordenes
+(Fecha nvarchar(100),
+Codigo nvarchar(100),
+ID nvarchar(100),
+Estatus nvarchar(100),
+)
+ go
+
+ create table Detalle
+ (IDArticulo nvarchar (100),
+ Cantidad nvarchar (100),
+ Precio  nvarchar (100),
+ Categoria nvarchar (100),
+ 
+ )
+ go
+
+ create table  Categoria
+ (Nombre  varchar(100),
+ Descripcion nvarchar (100),
+ Categoria nvarchar (100),
+ )
+ go
+
+ create table Empleados(
+ ID nvarchar (50),
+Nombre nvarchar(50),
+Apellido nvarchar(50),
+)
+Go
